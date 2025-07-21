@@ -5,7 +5,7 @@ public class BakJiSeok {
   private int age;
 
   public BakJiSeok(String name, int age) {
-    this.name = name;
+    this.name = name == null ? "" : name;
     this.age = age;
   }
 
@@ -18,11 +18,11 @@ public class BakJiSeok {
   }
 
   public String getName() {
-    return name;
+    return name == null ? "" : name;
   }
 
   public void setName(String name) {
-    this.name = name;
+    this.name = name == null ? "" : name;
   }
 
   public int getAge() {
