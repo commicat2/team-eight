@@ -4,6 +4,7 @@ public class BakJiSeok {
   private String name;
   private int age;
 
+
   public BakJiSeok(String name, int age) {
     this.name = name == null ? "" : name;
     this.age = age;
@@ -13,8 +14,7 @@ public class BakJiSeok {
     this(name, 0);
   }
 
-  public BakJiSeok() {
-    this("", 0);
+  private BakJiSeok() {
   }
 
   public String getName() {
