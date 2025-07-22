@@ -1,13 +1,12 @@
 package BakJiSeok;
 
-import java.util.Optional;
-
 public class BakJiSeok {
-  private Optional<String> name;
+  private String name;
   private int age;
 
+
   public BakJiSeok(String name, int age) {
-    this.name = Optional.ofNullable(name);
+    this.name = name == null ? "" : name;
     this.age = age;
   }
 
@@ -15,16 +14,15 @@ public class BakJiSeok {
     this(name, 0);
   }
 
-  public BakJiSeok() {
-    this("", 0);
+  private BakJiSeok() {
   }
 
-  public Optional<String> getName() {
-    return name;
+  public String getName() {
+    return name == null ? "" : name;
   }
 
-  public void setName(Optional<String> name) {
-    this.name = name;
+  public void setName(String name) {
+    this.name = name == null ? "" : name;
   }
 
   public int getAge() {
