@@ -7,7 +7,7 @@ public class JeongSujin {
     private int age;
 
 
-    public JeongSujin() {
+    private JeongSujin() {
     }
 
     public JeongSujin(String name, int age) {
