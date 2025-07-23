@@ -5,16 +5,16 @@ import java.util.Objects;
 public class JeongSujin {
     private String name;
     private int age;
-    private String id;
+    private int number;
 
 
     private JeongSujin() {
     }
 
-    public JeongSujin(String name, int age, String id) {
+    public JeongSujin(String name, int age, int number) {
         this.name = name;
         this.age = age;
-        this.id = id;
+        this.number = number;
     }
 
     public String getName() {
@@ -25,8 +25,8 @@ public class JeongSujin {
         return age;
     }
 
-    public String getId() {
-        return id;
+    public int getNumber() {
+        return number;
     }
 
     @Override
@@ -34,7 +34,7 @@ public class JeongSujin {
         final StringBuilder sb = new StringBuilder("JeongSujin{");
         sb.append("name='").append(name).append('\'');
         sb.append(", age=").append(age);
-        sb.append(", id='").append(id).append('\'');
+        sb.append(", number=").append(number);
         sb.append('}');
         return sb.toString();
     }
@@ -43,11 +43,11 @@ public class JeongSujin {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         JeongSujin that = (JeongSujin) o;
-        return age == that.age && Objects.equals(name, that.name) && Objects.equals(id, that.id);
+        return age == that.age && number == that.number && Objects.equals(name, that.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, age, id);
+        return Objects.hash(name, age, number);
     }
 }
