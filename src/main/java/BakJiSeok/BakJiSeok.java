@@ -6,7 +6,7 @@ public class BakJiSeok {
 
 
   public BakJiSeok(String name, int age) {
-    this.name = name == null ? "" : name;
+    this.name = name == null ? "x" : name;
     this.age = age;
   }
 
