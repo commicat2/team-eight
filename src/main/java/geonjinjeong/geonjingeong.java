@@ -7,7 +7,7 @@ public class geonjingeong {
     private int age;
     private String address;
     private String major;
-
+    private String minor;  //내브런치에서 추가한 필드 변수
 
     //기본 생성자 생성
     public geonjingeong() {
