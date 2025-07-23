@@ -6,7 +6,8 @@ public class geonjingeong {
     private String univ;
     private int age;
     private String address;
-    private String minor;  //내브런치에서 추가한 필드 변수
+    private String major; //main에서 추가 된 필드 변수
+
 
     //기본 생성자 생성
     public geonjingeong() {
