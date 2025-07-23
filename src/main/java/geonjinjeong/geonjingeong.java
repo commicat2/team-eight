@@ -6,6 +6,7 @@ public class geonjingeong {
     private String univ;
     private int age;
     private String address;
+    private String major;
 
 
     //기본 생성자 생성
