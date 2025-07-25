@@ -25,19 +25,19 @@ public class BakJiSeok {
     this.name = name == null ? "" : name;
   }
 
-  public int getAg() {
-    return ag;
+  public int getage() {
+    return age;
   }
 
-  public void setAg(int ag) {
-    this.ag = ag;
+  public void setage(int age) {
+    this.age = age;
   }
 
   @Override
   public String toString() {
     return "BakJiSeok{" +
         "name='" + name + '\'' +
-        ", age=" + ag +
+        ", age=" + age +
         '}';
   }
 }
