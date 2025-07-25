@@ -2,12 +2,12 @@ package BakJiSeok;
 
 public class BakJiSeok {
   private String name;
-  private int age;
+  private int agee;
 
 
-  public BakJiSeok(String name, int age) {
+  public BakJiSeok(String name, int agee) {
     this.name = name == null ? "x" : name;
-    this.age = age;
+    this.agee = agee;
   }
 
   public BakJiSeok(String name) {
@@ -25,19 +25,19 @@ public class BakJiSeok {
     this.name = name == null ? "" : name;
   }
 
-  public int getAge() {
-    return age;
+  public int getAgee() {
+    return agee;
   }
 
-  public void setAge(int age) {
-    this.age = age;
+  public void setAgee(int agee) {
+    this.agee = agee;
   }
 
   @Override
   public String toString() {
     return "BakJiSeok{" +
         "name='" + name + '\'' +
-        ", age=" + age +
+        ", age=" + agee +
         '}';
   }
 }
