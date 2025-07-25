@@ -37,7 +37,7 @@ public class BakJiSeok {
   public String toString() {
     return "BakJiSeok{" +
         "name='" + name + '\'' +
-        ", agex=" + age +
+        ", age=" + age +
         '}';
   }
 }
