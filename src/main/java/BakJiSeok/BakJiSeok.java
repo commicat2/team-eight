@@ -25,11 +25,11 @@ public class BakJiSeok {
     this.name = name == null ? "" : name;
   }
 
-  public int getage() {
+  public int getAge() {
     return age;
   }
 
-  public void setage(int age) {
+  public void setAge(int age) {
     this.age = age;
   }
 
