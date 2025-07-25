@@ -6,7 +6,7 @@ public class BakJiSeok {
 
 
   public BakJiSeok(String name, int age) {
-    this.name = name == null ? "x" : name;
+    this.name = name == null ? "" : name;
     this.age = age;
   }
 
@@ -25,19 +25,19 @@ public class BakJiSeok {
     this.name = name == null ? "" : name;
   }
 
-  public int getAge() {
-    return age;
+  public int getAg() {
+    return ag;
   }
 
-  public void setAge(int age) {
-    this.age = age;
+  public void setAg(int ag) {
+    this.ag = ag;
   }
 
   @Override
   public String toString() {
     return "BakJiSeok{" +
         "name='" + name + '\'' +
-        ", age=" + age +
+        ", age=" + ag +
         '}';
   }
 }
